@@ -1,0 +1,171 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f7f3ef;
+  color: #3e2723;
+}
+
+.hero {
+  text-align: center;
+  background: linear-gradient(180deg, #8b5e3c, #b08968);
+  padding: 30px 20px;
+  color: #fff8e1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  width: 90px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background: #d4a373;
+  color: #3e2723;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #6d4c41;
+  color: #fff8e1;
+}
+
+/* === Filtros === */
+.filtros {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filtro-btn {
+  background: #d4a373;
+  color: #3e2723;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 15px;
+  margin: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filtro-btn:hover {
+  background: #b07b52;
+  color: #fff;
+}
+
+.filtro-btn.activo {
+  background: #4e342e;
+  color: #fff8e1;
+}
+
+/* === Carrusel === */
+.categoria-section {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.categoria-section h3 {
+  text-align: center;
+  background: #f2e5d7;
+  display: inline-block;
+  padding: 6px 15px;
+  border-radius: 12px;
+  color: #3e2723;
+  margin-bottom: 15px;
+}
+
+.carrusel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.flecha {
+  background: #5d4037;
+  color: #fff8e1;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.flecha:hover {
+  background: #3e2723;
+  transform: scale(1.1);
+}
+
+.flecha.izquierda {
+  margin-right: 10px;
+}
+
+.flecha.derecha {
+  margin-left: 10px;
+}
+
+.productos-grid {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 15px;
+  padding: 10px;
+}
+
+.productos-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.productos-grid::-webkit-scrollbar-thumb {
+  background: #b08968;
+  border-radius: 10px;
+}
+
+/* === Tarjetas de producto === */
+.card {
+  background: #fffdf9;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  flex: 0 0 230px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: #6d4c41;
+}
+
+/* === Footer === */
+footer {
+  background: #3e2723;
+  color: #fff8e1;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 14px;
+}
