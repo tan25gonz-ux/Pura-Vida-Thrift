@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pura Vida Thrift</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 🌙 Botón modo oscuro -->
+  <button id="toggleTheme" class="theme-btn">🌞</button>
+
+<header class="hero">
+  <img src="Imagenes/Logo.png" alt="Pura Vida Thrift">
+  <h1>Pura Vida Thrift</h1>
+  <p>Moda sostenible con estilo tico 🇨🇷</p>
+  <a href="admin.html">Entrar como Administrador</a>
+</header>
+
+  <main>
+    <section class="productos">
+      <h2>Nuestra Colección</h2>
+
+      <!-- Filtros -->
+      <div class="filtros">
+        <button class="filtro-btn activo" data-cat="Todos">Todos</button>
+        <button class="filtro-btn" data-cat="Camisa">Camisa</button>
+        <button class="filtro-btn" data-cat="Pantalones">Pantalones</button>
+        <button class="filtro-btn" data-cat="Shorts">Shorts</button>
+        <button class="filtro-btn" data-cat="Zapatos">Zapatos</button>
+        <button class="filtro-btn" data-cat="Accesorios">Accesorios</button>
+        <button class="filtro-btn" data-cat="Otros">Otros</button>
+      </div>
+
+      <!-- Productos -->
+      <div id="productosContainer" class="fade-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 <b>Pura Vida Thrift</b> | Hecho con ❤️ en Costa Rica</p>
+  </footer>
+
+  <!-- 🪄 Modal de producto -->
+  <div id="modalProducto" class="modal">
+    <div class="modal-content">
+      <span id="cerrarModal" class="cerrar">&times;</span>
+      <div class="modal-galeria">
+        <button id="prevImg" class="btn-nav">⟨</button>
+        <img id="modalImg" src="" alt="Producto" />
+        <button id="nextImg" class="btn-nav">⟩</button>
+      </div>
+      <h2 id="modalNombre"></h2>
+      <p id="modalCategoria"></p>
+      <p id="modalPrecio"></p>
+      <a id="modalWhatsApp" class="btn btn-wsp bounce" target="_blank">💬 Consultar por WhatsApp</a>
+    </div>
+  </div>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | Pura Vida Thrift</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="admin-body">
+  <header class="admin-header">
+    <h1>🛍️ Panel Administrador</h1>
+    <a href="index.html" class="btn-volver">← Volver a la tienda</a>
+  </header>
+
+  <!-- 🧾 FORMULARIO DE NUEVO PRODUCTO -->
+  <section class="form-nuevo">
+    <h2>➕ Agregar nuevo producto</h2>
+    <form id="formProducto">
+      <div class="input-group">
+        <label>Nombre:</label>
+        <input type="text" id="nombre" required>
+      </div>
+      <div class="input-group">
+        <label>Categoría:</label>
+        <select id="categoria" required>
+          <option value="">Selecciona...</option>
+          <option value="Camisa">Camisa</option>
+          <option value="Pantalones">Pantalones</option>
+          <option value="Shorts">Shorts</option>
+          <option value="Zapatos">Zapatos</option>
+          <option value="Accesorios">Accesorios</option>
+          <option value="Otros">Otros</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label>Precio (₡):</label>
+        <input type="number" id="precio" required>
+      </div>
+
+      <div id="dropArea" class="drop-area">
+        Arrastra imágenes aquí o haz clic para seleccionar (1 a 4)
+        <input type="file" id="fileInput" multiple hidden accept="image/*">
+        <div id="previewContainer" class="preview-container"></div>
+      </div>
+
+      <button type="submit" class="btn-guardar">Guardar producto</button>
+      <p id="status"></p>
+    </form>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 📦 LISTADO DE PRODUCTOS -->
+  <main id="productosContainer"></main>
+
+  <!-- ✏️ Modal de edición -->
+  <div id="modalEditar" class="modal">
+    <div class="modal-content">
+      <span id="cerrarModal" class="cerrar">&times;</span>
+      <h3>Editar producto</h3>
+      <form id="formEditar">
+        <label>Nombre:</label>
+        <input type="text" id="editNombre" required>
+
+        <label>Categoría:</label>
+        <select id="editCategoria">
+          <option value="Camisa">Camisa</option>
+          <option value="Pantalones">Pantalones</option>
+          <option value="Shorts">Shorts</option>
+          <option value="Zapatos">Zapatos</option>
+          <option value="Accesorios">Accesorios</option>
+          <option value="Otros">Otros</option>
+        </select>
+
+        <label>Precio (₡):</label>
+        <input type="number" id="editPrecio" required>
+
+        <button type="submit" class="btn-guardar">💾 Guardar cambios</button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>
