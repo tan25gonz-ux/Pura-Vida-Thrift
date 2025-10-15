@@ -1,0 +1,20 @@
+[
+  {
+    "nombre": "Camisa vintage tropical",
+    "categoria": "camisas",
+    "precio": 5500,
+    "imagen": "assets/ropa/camisa1.jpg"
+  },
+  {
+    "nombre": "Jeans clásicos azules",
+    "categoria": "jeans",
+    "precio": 8000,
+    "imagen": "assets/ropa/jeans1.jpg"
+  },
+  {
+    "nombre": "Vestido floral ligero",
+    "categoria": "vestidos",
+    "precio": 12000,
+    "imagen": "assets/ropa/vestido1.jpg"
+  }
+]
